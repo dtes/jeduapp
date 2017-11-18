@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <domain name="Usr" parent="wax.Table" tag.db="true">
+
+        <field name="email" parent="string" size="50" title="Логин, email"/>
+        <field name="passwd" parent="string" size="64"/>
+        <field name="firstname" parent="string" size="50"/>
+        <field name="lastname" parent="string" size="50"/>
+        <field name="roleId" parent="Role/ref"/>
+        <field name="curSubjectId" parent="Subject/ref"/>
+
+        <dao name="list" class="jandcode.wax.core.model.WaxListDao"/>
+        <dao name="updater" class="jandcode.wax.core.model.WaxUpdaterDao"/>
+    </domain>
+
+</root>

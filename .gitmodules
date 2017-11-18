@@ -1,0 +1,3 @@
+[submodule "mb-core"]
+	path = mb-core
+	url = https://github.com/dirtbak/mb-core.git

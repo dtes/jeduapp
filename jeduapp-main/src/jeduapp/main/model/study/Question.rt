@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <domain name="Question" parent="wax.Table" tag.db="true">
+
+        <field name="name" parent="string" size="500"/>
+        <field name="questionTypeId" parent="QuestionType/ref"/>
+        <field name="subChapterId" parent="SubChapter/ref" size="300"/>
+
+        <dao name="list" class="jandcode.wax.core.model.WaxListDao"/>
+        <dao name="updater" class="jandcode.wax.core.model.WaxUpdaterDao"/>
+    </domain>
+
+</root>

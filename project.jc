@@ -1,0 +1,14 @@
+//
+project.name = "jeduapp"
+project.package_root = "jeduapp"
+//
+include "wax-root-project"
+include "wax-verdb-project"
+include "wax-verdb-project-product"
+//
+modules = ['mb-core', 'jeduapp-main']
+
+//
+libs = libs + []
+libs_dev = libs_dev + []
+//

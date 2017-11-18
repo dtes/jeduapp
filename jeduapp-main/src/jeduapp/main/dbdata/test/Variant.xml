@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <row id="1" name="1466 году" questionId="1" isTrue="true"/>
+    <row id="2" name="1472 году" questionId="1"/>
+    <row id="3" name="1470 году" questionId="1"/>
+    <row id="4" name="1465 году" questionId="1"/>
+    <row id="5" name="1468 году" questionId="1"/>
+
+    <row id="6" name="мангытами и чигили" questionId="2"/>
+    <row id="7" name="кыпчаками и уйсунами" questionId="2" isTrue="true"/>
+    <row id="8" name="ягма и  карлуками" questionId="2"/>
+    <row id="9" name="найманами и кереитами" questionId="2"/>
+    <row id="10" name="аргынами и барласами" questionId="2"/>
+
+    <row id="11" name="Сыгнак" questionId="3"/>
+    <row id="12" name="Сауран" questionId="3"/>
+    <row id="13" name="Сайрам" questionId="3" isTrue="true"/>
+    <row id="14" name="Отрар" questionId="3"/>
+    <row id="15" name="Туркестан" questionId="3"/>
+
+    <row id="16" name="жарапазан" questionId="4"/>
+    <row id="17" name="жар-жар" questionId="4"/>
+    <row id="18" name="тагар" questionId="4"/>
+    <row id="19" name="естирту" questionId="4" isTrue="true"/>
+    <row id="20" name="жоктау" questionId="4"/>
+
+    <row id="21" name="А.Байтурсынов" questionId="5"/>
+    <row id="22" name="А.Букейханов" questionId="5"/>
+    <row id="23" name="Т.Рыскулов" questionId="5" isTrue="true"/>
+    <row id="24" name="М.Дулатов" questionId="5"/>
+    <row id="25" name="Б.Каратаев" questionId="5"/>
+
+    <row id="26" name="оборона Ленинграда" questionId="6"/>
+    <row id="27" name="оборона Бреста" questionId="6"/>
+    <row id="28" name="оборона Севастополя" questionId="6"/>
+    <row id="29" name="оборона Сталинграда" questionId="6" isTrue="true"/>
+    <row id="30" name="налет на Москву" questionId="6"/>
+
+    <row id="31" name="Иссык" questionId="7"/>
+    <row id="32" name="Бесшатыр" questionId="7" isTrue="true"/>
+    <row id="33" name="Каргалы" questionId="7"/>
+    <row id="34" name="Бесоба" questionId="7"/>
+    <row id="35" name="Сынтас" questionId="7"/>
+
+    <row id="36" name="Арабов" questionId="8"/>
+    <row id="37" name="Карлуков" questionId="8"/>
+    <row id="38" name="Китайцев" questionId="8" isTrue="true"/>
+    <row id="39" name="Кимаков" questionId="8"/>
+    <row id="40" name="Огузов" questionId="8"/>
+
+    <row id="41" name="Тандыр" questionId="9"/>
+    <row id="42" name="Коржын" questionId="9"/>
+    <row id="43" name="Шахристан" questionId="9"/>
+    <row id="44" name="Рабад" questionId="9"/>
+    <row id="45" name="Ташнау" questionId="9" isTrue="true"/>
+
+    <row id="46" name="Иисуса" questionId="10"/>
+    <row id="47" name="Тенгри" questionId="10" isTrue="true"/>
+    <row id="48" name="Будду" questionId="10"/>
+    <row id="49" name="Митра" questionId="10"/>
+    <row id="50" name="Мани" questionId="10"/>
+
+    <row id="51" name="Старшем жузе" questionId="11" isTrue="true"/>
+    <row id="52" name="Семиречье" questionId="11"/>
+    <row id="53" name="Среднем жузе" questionId="11"/>
+    <row id="54" name="Букеевской Орде" questionId="11"/>
+    <row id="55" name="Младшем жузе" questionId="11"/>
+
+    <row id="56" name="Проигнорировало" questionId="12"/>
+    <row id="57" name="Компенсировало разрешением кочевать у Волги" questionId="12"/>
+    <row id="58" name="Удовлетворило" questionId="12"/>
+    <row id="59" name="Отложило  рассмотрение" questionId="12" isTrue="true"/>
+    <row id="60" name="Компенсировало деньгами" questionId="12"/>
+
+    <row id="61" name="Есет Котибарулы" questionId="13"/>
+    <row id="62" name="Исатай Тайманулы" questionId="13"/>
+    <row id="63" name="Кенесары Касымулы" questionId="13" isTrue="true"/>
+    <row id="64" name="Сырым Датулы" questionId="13"/>
+    <row id="65" name="Саржан Касымулы" questionId="13"/>
+
+    <row id="66" name="устранения потомков Аблая" questionId="14"/>
+    <row id="67" name="назначения своего ставленника" questionId="14" isTrue="true"/>
+    <row id="68" name="ликвидации ханской власти в Младшем жузе" questionId="14"/>
+    <row id="69" name="передачи власти родоправителям" questionId="14"/>
+    <row id="70" name="ликвидации ханской власти в Среднем жузе" questionId="14"/>
+
+    <row id="71" name="Карынбай Зындагулулы" questionId="15" isTrue="true"/>
+    <row id="72" name="Сагит Хамитулы" questionId="15"/>
+    <row id="73" name="Нарынбай Жанжигитулы" questionId="15"/>
+    <row id="74" name="Ериш Азаматулы" questionId="15"/>
+    <row id="75" name="Байсакал Тилекулы" questionId="15"/>
+
+
+</root>

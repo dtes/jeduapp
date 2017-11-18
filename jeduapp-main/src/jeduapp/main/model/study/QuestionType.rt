@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <domain name="QuestionType" parent="wax.DictSimple" tag.db="true">
+    </domain>
+
+</root>

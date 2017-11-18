@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <row id="1" name="Глава 1" subjectId="1" col="100"/>
+    <row id="2" name="Глава 2" subjectId="1" col="50"/>
+    <row id="3" name="Глава 3" subjectId="1" col="50"/>
+
+</root>

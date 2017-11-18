@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <row id="1" name="superuser"/>
+    <row id="2" name="user"/>
+    <row id="3" name="student"/>
+    <row id="4" name="teacher"/>
+
+</root>

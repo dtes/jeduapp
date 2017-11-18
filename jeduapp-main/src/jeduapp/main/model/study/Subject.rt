@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <domain name="Subject" parent="wax.DictSimple" tag.db="true">
+        <dict defaultField="name"/>
+
+        <field name="description" parent="string" size="300"/>
+        <field name="hidden" parent="boolean" title="Не показывать пользователям"/>
+
+    </domain>
+
+</root>

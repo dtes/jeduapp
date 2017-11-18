@@ -1,0 +1,15 @@
+//
+load '..'
+//
+project.name = "jeduapp-main"
+project.package_root = "jeduapp.main"
+//
+include "wax-module-project"
+include "localize-project"
+//
+libs = libs + [
+    "jandcode-wax-core", "jandcode-wax-verdb",
+    "postgresql"
+]
+libs_dev = libs_dev + []
+//

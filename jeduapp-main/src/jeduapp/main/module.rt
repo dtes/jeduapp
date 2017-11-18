@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <x-module name="jeduapp.main">
+        <depend name="jandcode.dbm"/>
+        <depend name="jandcode.lang"/>
+        <depend name="jandcode.auth"/>
+        <depend name="jandcode.wax.core"/>
+        <depend name="jandcode.wax.verdb"/>
+    </x-module>
+
+    <model name="jeduapp.main" parent="sys" x-root="true">
+        <x-include plugin="jandcode.wax.core.model"/>
+        <x-include plugin="jandcode.wax.verdb.model"/>
+        <x-include path="model/model.rt"/>
+    </model>
+
+    <!-- postgresql -->
+    <x-include path="postgres/pg-plugin.rt"/>
+
+    <dbm>
+        <registermodel name="default" model="jeduapp.main"/>
+    </dbm>
+
+    <web>
+        <resource name="jeduapp.main" package="jeduapp.main"/>
+    </web>
+
+    <lang>
+        <lang name="en" title="English"/>
+    </lang>
+
+    <app title="Jeduapp"/>
+
+
+</root>

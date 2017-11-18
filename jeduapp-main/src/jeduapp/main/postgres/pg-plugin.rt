@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <dbdriver name="postgresql" parent="jdbc"
+              class="jeduapp.main.postgres.PostgresDbDriver"
+              jdbcDriverClass="org.postgresql.Driver"
+              url="jdbc:postgresql://${host}:5432/${database}">
+
+        <dbdatatype name="blob" sqltype="blob"/>
+        <dbdatatype name="boolean" sqltype="boolean"/>
+        <dbdatatype name="date" sqltype="timestamp" class="jandcode.dbm.db.impl.dbt.Dbt_datetime"/>
+        <dbdatatype name="datetime" sqltype="timestamp"/>
+        <dbdatatype name="double" sqltype="real"/>
+        <dbdatatype name="int" sqltype="int"/>
+        <dbdatatype name="long" sqltype="bigint"/>
+        <dbdatatype name="string" sqltype="varchar(${size})"/>
+        <dbdatatype name="memo" sqltype="clob"/>
+        <dbdatatype name="smallint" sqltype="smallint"/>
+
+        <service name="jandcode.dbm.db.ConnectionService"
+                 class="jandcode.dbm.db.impl.ConnectionServiceImpl"
+                 validationQuery.postgresql="select 1"/>
+
+        <service name="jandcode.dbm.db.MetaDataService"
+                 class="jeduapp.main.postgres.PostgresMetadataService"/>
+
+        <service name="jandcode.dbm.db.GenIdService"
+                 class="jeduapp.main.postgres.PostgresGenIdService">
+            <ddl name="create" file="res:jeduapp/main/postgres/genid-seq-create.sql.gsp"/>
+        </service>
+
+        <service name="jandcode.dbm.db.DbManagerService"
+                 class="jeduapp.main.postgres.PostgresDbManagerService"/>
+
+        <service name="jandcode.dbm.sqlfilter.SqlFilterService"
+                 sqlfilter="jandcode.dbm.sqlfilter.impl.SqlFilterServiceImpl"/>
+
+    </dbdriver>
+
+</root>
