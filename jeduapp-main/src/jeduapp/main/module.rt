@@ -7,11 +7,14 @@
         <depend name="jandcode.auth"/>
         <depend name="jandcode.wax.core"/>
         <depend name="jandcode.wax.verdb"/>
+        <depend name="mb.core"/>
+        <depend name="mb.auth"/>
     </x-module>
 
     <model name="jeduapp.main" parent="sys" x-root="true">
         <x-include plugin="jandcode.wax.core.model"/>
         <x-include plugin="jandcode.wax.verdb.model"/>
+        <x-include plugin="mb.auth.model"/>
         <x-include path="model/model.rt"/>
     </model>
 
@@ -32,5 +35,9 @@
 
     <app title="Jeduapp"/>
 
+    <mb>
+        <!--<x-include path="controller/validators/validators.rt"/>-->
+        <x-include path="controller/controllers.rt"/>
+    </mb>
 
 </root>

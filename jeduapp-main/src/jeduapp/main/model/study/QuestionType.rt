@@ -2,6 +2,7 @@
 <root>
 
     <domain name="QuestionType" parent="wax.DictSimple" tag.db="true">
+        <dict defaultField="name"/>
     </domain>
 
 </root>

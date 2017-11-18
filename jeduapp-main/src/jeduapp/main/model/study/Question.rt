@@ -7,7 +7,7 @@
         <field name="questionTypeId" parent="QuestionType/ref"/>
         <field name="subChapterId" parent="SubChapter/ref" size="300"/>
 
-        <dao name="list" class="jandcode.wax.core.model.WaxListDao"/>
+        <dao name="list" class="jeduapp.main.model.study.QuestionListDao"/>
         <dao name="updater" class="jandcode.wax.core.model.WaxUpdaterDao"/>
     </domain>
 

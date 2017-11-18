@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <domain name="Usr" parent="wax.Table" tag.db="true" title="Пользователи">
+        <dict resolve="true" domain="Usr.dict" defaultField="username"/>
+
+        <field name="id" auth.stdfield="true"/>
+        <field name="username" parent="string" size="32" auth.stdfield="true" title="Имя пользователя"/>
+        <field name="email" parent="string" size="64" title="Email пользователя"/>
+        <field name="passwd" parent="password" size="64" auth.stdfield="true" visible="false" title="Пароль"/>
+        <field name="fullname" parent="string" size="32" auth.stdfield="true" title="Полное имя пользователя"/>
+        <field name="locked" parent="boolean" auth.stdfield="true" title="Заблокирован"/>
+
+        <!-- =================== -->
+
+        <dao name="auth" class="mb.auth.model.MbUsrAuthDao"/>
+        <dao name="list" class="mb.auth.model.UsrListDao"/>
+        <dao name="updater" class="mb.auth.model.UsrUpdaterDao"/>
+        <dao name="dict" class="mb.auth.model.UsrDictDao"/>
+
+    </domain>
+
+    <!-- ===================================================================== -->
+
+    <domain name="Usr.edit" parent="Usr">
+        <field name="passwd2" parent="Usr/passwd" title="Подтверждение пароля"/>
+    </domain>
+
+    <domain name="Usr.dict" parent="id">
+        <field name="username" parent="string"/>
+        <field name="fullname" parent="string"/>
+    </domain>
+</root>

@@ -6,7 +6,7 @@ include "wax-root-project"
 include "wax-verdb-project"
 include "wax-verdb-project-product"
 //
-modules = ['mb-core', 'jeduapp-main']
+modules = ['jeduapp-main', 'mb-core', 'mb-auth']
 
 //
 libs = libs + []

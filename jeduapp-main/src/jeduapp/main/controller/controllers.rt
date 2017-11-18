@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <controller name="test" path="test" class="jeduapp.main.controller.TestController">
+        <!--<validator name="auth"/>-->
+    </controller>
+
+    <controller name="subject" path="subject" class="jeduapp.main.controller.SubjectController">
+    </controller>
+
+    <controller name="study" path="study" class="jeduapp.main.controller.api.StudyController">
+    </controller>
+
+</root>

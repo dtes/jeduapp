@@ -9,7 +9,7 @@ include "localize-project"
 //
 libs = libs + [
     "jandcode-wax-core", "jandcode-wax-verdb",
-    "postgresql"
+    "mb-core", "postgresql"
 ]
 libs_dev = libs_dev + []
 //

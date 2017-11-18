@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <x-module name="mb.auth"/>
+
+    <x-plugin name="mb.auth.model"
+              path="model/model.rt">
+        <depend name="jandcode.wax.core.model"/>
+    </x-plugin>
+
+    <service name="jandcode.web.WebService">
+        <service name="jandcode.web.FilterService">
+            <!-- фильтр аутенфикации -->
+            <filter name="auth" class="mb.auth.filter.AuthFilter"/>
+        </service>
+    </service>
+
+    <service name="jandcode.auth.AuthService"
+             class="mb.auth.impl.AuthServiceImpl"/>
+
+    <web>
+        <resource name="mb.auth" package="mb.auth"/>
+    </web>
+
+    <app appdir="#{path}">
+        <conf name="loginField" value="email"/>
+    </app>
+
+</root>
