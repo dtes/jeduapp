@@ -7,7 +7,8 @@
 
     <servlet>
         <servlet-name>jandcode-web</servlet-name>
-        <servlet-class>jandcode.web.JcServlet</servlet-class>
+        <!--<servlet-class>jandcode.web.JcServlet</servlet-class>-->
+        <servlet-class>jeduapp.main.filter.CustomServlet</servlet-class>
         <init-param>
             <param-name>app.rt</param-name>
             <param-value>app.rt</param-value>
@@ -28,5 +29,22 @@
         <exception-type>java.lang.Exception</exception-type>
         <location>/showerror</location>
     </error-page>
+
+    <filter>
+        <filter-name>corsFilter</filter-name>
+        <filter-class>jeduapp.main.filter.SimpleCorsFilter</filter-class>
+        <init-param>
+            <param-name>cors.allowed.url</param-name>
+            <param-value>/api/</param-value>
+        </init-param>
+        <init-param>
+            <param-name>cors.allowed.headers</param-name>
+            <param-value>mb-ajax,content-type</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>corsFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
 </web-app>

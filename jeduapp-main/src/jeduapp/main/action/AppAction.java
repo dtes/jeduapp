@@ -12,5 +12,4 @@ public class AppAction extends MbAppAction {
         return "/gsp/app.gsp";
     }
 
-
 }

@@ -8,7 +8,7 @@
     <controller name="subject" path="subject" class="jeduapp.main.controller.SubjectController">
     </controller>
 
-    <controller name="study" path="study" class="jeduapp.main.controller.api.StudyController">
+    <controller name="study" path="api/study" class="jeduapp.main.controller.api.StudyController">
     </controller>
 
 </root>

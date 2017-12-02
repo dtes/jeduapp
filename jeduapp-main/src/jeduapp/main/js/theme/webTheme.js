@@ -13,7 +13,7 @@
             var mainShower = $.mb.create('$.mb.shower.WebShower');
             mainShower.on({
                 'mb.beforeRemove': function (e) {
-                    $.mb.app.sidebar.trigger("hide");
+                    // $.mb.app.sidebar.trigger("hide");
                 },
 
                 'mb.afterShow': function (e, frame) {

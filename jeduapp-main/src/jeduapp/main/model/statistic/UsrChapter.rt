@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <domain name="UsrChapter" parent="wax.Table" tag.db="true">
+
+        <field name="usrId" parent="Usr/ref"/>
+        <field name="chapterId" parent="Chapter/ref"/>
+        <field name="dt" parent="datetime"/>
+        <field name="result" parent="int" dbdatatype="smallint" title="Результат в процентном соотношении"/>
+
+        <dao name="list" class="jandcode.wax.core.model.WaxListDao"/>
+        <dao name="updater" class="jandcode.wax.core.model.WaxUpdaterDao"/>
+
+    </domain>
+
+</root>

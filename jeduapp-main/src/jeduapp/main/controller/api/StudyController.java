@@ -9,7 +9,9 @@ import mb.core.utils.UtStore;
 
 public class StudyController extends MbController {
 
-    public void get(DataBox params) throws Exception {
+    long usr = 1000;
+
+    public void getSubject(DataBox params) throws Exception {
         long id = params.getValueLong("id");
         DataRecord subject = ut.getDictRec(id, "Subject");
 
@@ -47,5 +49,12 @@ public class StudyController extends MbController {
         ));
     }
 
+    public void finishTest(DataBox params) throws Exception {
+        long subChapterId = params.getValueLong("subChapter");
+        DataStore answers = (DataStore) params.get("answers");
+        ut.daoinvoke("Answer", "updater/ins2", usr, subChapterId, answers);
+
+        renderSuccess();
+    }
 
 }

@@ -2,6 +2,7 @@
 temp
 out
 .idea
+.ideaDataSources
 *.iml
 *.ipr
 *.iws
