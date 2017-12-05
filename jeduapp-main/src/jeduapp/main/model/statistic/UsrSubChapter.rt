@@ -2,7 +2,6 @@
 <root>
 
     <domain name="UsrSubChapter" parent="wax.Table" tag.db="true">
-
         <field name="usrId" parent="Usr/ref"/>
         <field name="subChapterId" parent="SubChapter/ref"/>
         <field name="dt" parent="datetime"/>
@@ -10,7 +9,9 @@
 
         <dao name="list" class="jandcode.wax.core.model.WaxListDao"/>
         <dao name="updater" class="jandcode.wax.core.model.WaxUpdaterDao"/>
+    </domain>
 
+    <domain name="UsrSubChapterData" parent="UsrSubChapter" tag.db="true">
     </domain>
 
 </root>

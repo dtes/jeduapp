@@ -2,7 +2,6 @@
 <root>
 
     <domain name="Usr" parent="wax.Table" tag.db="true">
-
         <field name="email" parent="string" size="50" title="Логин, email"/>
         <field name="passwd" parent="string" size="64"/>
         <field name="firstname" parent="string" size="50"/>

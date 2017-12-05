@@ -4,5 +4,8 @@
     <row id="1" name="Глава 1" subjectId="1" col="100"/>
     <row id="2" name="Глава 2" subjectId="1" col="50"/>
     <row id="3" name="Глава 3" subjectId="1" col="50"/>
+    <row id="4" name="Глава 4" subjectId="1" col="100"/>
+    <row id="5" name="Глава 5" subjectId="1" col="50"/>
+    <row id="6" name="Глава 6" subjectId="1" col="50"/>
 
 </root>

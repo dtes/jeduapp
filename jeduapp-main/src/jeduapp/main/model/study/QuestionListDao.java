@@ -16,11 +16,11 @@ public class QuestionListDao extends WaxListDao {
         DataStore questions = ut.createStore("Question");
         DataStore variants = ut.createStore("Variant");
 
-        ut.loadSql(questions, "select * from question where subChapterId=:id", subChapter);
+        ut.loadSql(questions, "select * from Question where subChapterId=:id", subChapter);
 
         if (questions.size() > 0) {
             String ids = UtString.join(UtData.uniqueValues(questions, "id"), ",");
-            ut.loadSql(variants, "select * from variant where questionId in (${ids})", UtCnv.toMap("ids", ids));
+            ut.loadSql(variants, "select * from Variant where questionId in (${ids})", UtCnv.toMap("ids", ids));
         }
 
         box.put("questions", questions);

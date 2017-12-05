@@ -2,13 +2,11 @@
 <root>
 
     <domain name="Answer" parent="wax.Table" tag.db="true">
-
         <field name="usrId" parent="Usr/ref"/>
         <field name="questionId" parent="Question/ref"/>
         <field name="variantId" parent="Variant/ref"/>
 
         <dao name="updater" class="jeduapp.main.model.study.AnswersUpdDao"/>
-
     </domain>
 
 </root>

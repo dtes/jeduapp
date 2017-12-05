@@ -2,11 +2,9 @@
 <root>
 
     <domain name="Variant" parent="wax.DictSimple" tag.db="true">
-
         <field name="name" parent="string" size="500"/>
         <field name="correct" parent="boolean"/>
         <field name="questionId" parent="Question/ref"/>
-
     </domain>
 
 </root>

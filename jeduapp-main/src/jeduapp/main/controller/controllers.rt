@@ -8,7 +8,10 @@
     <controller name="subject" path="subject" class="jeduapp.main.controller.SubjectController">
     </controller>
 
+    <!-- API -->
     <controller name="study" path="api/study" class="jeduapp.main.controller.api.StudyController">
     </controller>
 
+    <controller name="statistic" path="api/statistic" class="jeduapp.main.controller.api.StatisticController">
+    </controller>
 </root>

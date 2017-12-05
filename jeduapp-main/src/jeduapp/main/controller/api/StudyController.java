@@ -4,10 +4,10 @@ import jandcode.dbm.data.DataBox;
 import jandcode.dbm.data.DataRecord;
 import jandcode.dbm.data.DataStore;
 import jandcode.utils.UtCnv;
-import mb.core.controller.MbController;
+import jeduapp.main.controller.CustomController;
 import mb.core.utils.UtStore;
 
-public class StudyController extends MbController {
+public class StudyController extends CustomController {
 
     long usr = 1000;
 
@@ -30,10 +30,18 @@ public class StudyController extends MbController {
         ));
     }
 
+    public void getSubChapter(DataBox params) throws Exception {
+        long subChapterId = params.getValueLong("subChapterId");
+        DataRecord subChapter = daoinvoker("SubChapterExt", "list/loadRec", usr, subChapterId);
+
+        renderJson(UtCnv.toMap(
+                "subChapter", subChapter
+        ));
+    }
+
     public void getSubChapters(DataBox params) throws Exception {
         long chapterId = params.getValueLong("chapterId");
-        DataStore subChapters = ut.getDict("SubChapter").getData();
-        subChapters = UtStore.filter(subChapters, "chapterId", chapterId, app);
+        DataStore subChapters = daoinvokes("SubChapterExt", "list/load", usr, chapterId);
 
         renderJson(UtCnv.toMap(
                 "subChapters", subChapters
@@ -42,7 +50,7 @@ public class StudyController extends MbController {
 
     public void getQuestions(DataBox params) throws Exception {
         long subChapterId = params.getValueLong("subChapterId");
-        DataBox box = (DataBox) ut.daoinvoke("Question", "list/loadBySubChapter", subChapterId);
+        DataBox box = daoinvokeb("Question", "list/loadBySubChapter", subChapterId);
 
         renderJson(UtCnv.toMap(
                 "box", box

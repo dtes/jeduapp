@@ -5,10 +5,9 @@
         <dict defaultField="name"/>
 
         <field name="subjectId" parent="Subject/ref" size="300"/>
-        <field name="col" parent="int" dbdatatype="smallint" title="Размер кологки в процентах"/>
+        <field name="icon" parent="string" size="100"/>
+        <field name="col" parent="int" dbdatatype="smallint" title="Размер колонки в процентах"/>
         <field name="hidden" parent="boolean" title="Не показывать пользователям"/>
-
-        <dao name="list" class="jeduapp.main.model.study.ChapterListDao"/>
     </domain>
 
 </root>

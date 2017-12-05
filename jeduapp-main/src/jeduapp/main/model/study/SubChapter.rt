@@ -5,8 +5,16 @@
         <dict defaultField="name"/>
 
         <field name="chapterId" parent="Chapter/ref" size="300"/>
+        <field name="icon" parent="string" size="100"/>
         <field name="hidden" parent="boolean" title="Не показывать пользователям"/>
+    </domain>
 
+
+    <domain name="SubChapterExt" parent="SubChapter">
+        <field name="result" parent="int"/>
+        <field name="train" parent="boolean" title="Проходил ли польз. данную подглаву"/>
+
+        <dao name="list" class="jeduapp.main.model.study.SubChapterExtListDao"/>
     </domain>
 
 </root>
